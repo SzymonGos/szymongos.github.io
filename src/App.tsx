@@ -1,9 +1,9 @@
 import AboutSection from "./components/AboutSection";
 import { Container } from "./components/Container";
-import Menu from "./components/Menu";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import BackgroundWrapper from "./components/BackgroundWrapper";
+import MenuContainer from "./components/Menu/MenuContainer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
             <div className="flex h-full flex-col my-auto translate-y-1/4">
               <h1 className="text-7xl font-bold">Szymon Gos</h1>
               <p>Frontend Developer</p>
-              <Menu />
+              <MenuContainer />
             </div>
           </div>
           <div className="col-span-1 col-start-2">
