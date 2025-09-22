@@ -3,11 +3,13 @@ import { Container } from "./components/Container";
 import Menu from "./components/Menu";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
+import BackgroundWrapper from "./components/BackgroundWrapper";
 
 function App() {
   return (
-    <div className="h-svh">
+    <div>
       <Container>
+        <BackgroundWrapper />
         <div className="relative grid grid-cols-2 gap-5">
           <div className="sticky top-0 col-span-1 h-svh">
             <div className="flex h-full flex-col my-auto translate-y-1/4">
