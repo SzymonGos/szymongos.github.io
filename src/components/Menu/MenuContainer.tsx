@@ -4,6 +4,8 @@ import Menu from "./Menu";
 
 export type TUrlType = "about" | "experience" | "projects";
 
+const SECTIONS = ["about", "experience", "projects"];
+
 const MenuContainer = () => {
   const location = useLocation();
   const [activeUrl, setActiveUrl] = useState<TUrlType>(
@@ -13,12 +15,8 @@ const MenuContainer = () => {
   useEffect(() => {
     const hash = location?.hash?.slice(1);
     const targetSection =
-      hash && ["about", "experience", "projects"].includes(hash)
-        ? hash
-        : "about";
-
+      hash && SECTIONS.includes(hash as TUrlType) ? hash : "about";
     setActiveUrl(targetSection as TUrlType);
-
     setTimeout(() => {
       const element = document.getElementById(targetSection);
       if (element) {
@@ -26,6 +24,39 @@ const MenuContainer = () => {
       }
     }, 100);
   }, [location?.hash]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id as TUrlType;
+            if (SECTIONS.includes(sectionId)) {
+              setActiveUrl(sectionId);
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+        rootMargin: "-20% 0px -20% 0px",
+      }
+    );
+    SECTIONS.forEach((sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+    return () => {
+      SECTIONS.forEach((sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, []);
 
   const handleClick = (url: TUrlType) => {
     setActiveUrl(url);
