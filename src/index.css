@@ -30,22 +30,41 @@ html {
   }
 }
 
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
+
+@keyframes livingBreathe5s {
+  0%, 20% {
     opacity: 1;
-    transform: translateX(0);
+  }
+  20%, 70% {
+    opacity: 0;
+  }
+  70%, 100% {
+    opacity: 1;
   }
 }
 
-@keyframes expandLine {
+@keyframes livingBreathe4s {
+ 
+  0%, 20% {
+    opacity: 0;
+  }
+  20%, 70% {
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromTop {
   from {
-    width: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
   }
   to {
-    width: 1.5rem;
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
   }
 }
