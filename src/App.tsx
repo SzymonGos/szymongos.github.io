@@ -1,6 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import { Container } from "./components/Container";
-import ExperienceSection from "./components/ExperienceSection";
+import ExperienceSection from "./components/Experience/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 import MenuContainer from "./components/Menu/MenuContainer";
@@ -14,7 +14,7 @@ function App() {
           <div className="sticky top-0 col-span-1 h-svh">
             <div className="flex h-full flex-col my-auto translate-y-1/4">
               <h1 className="text-7xl font-bold">Szymon Gos</h1>
-              <p>Frontend Developer</p>
+              <h2 className="mt-5 text-lg">Frontend Engineer</h2>
               <MenuContainer />
             </div>
           </div>
