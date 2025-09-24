@@ -19,7 +19,7 @@ export const MenuLink: FC<TMenuLinkProps> = ({
     >
       <span
         className={cx(
-          "h-0.5 bg-white transition-all duration-200 ease-out",
+          "h-[1px] bg-white transition-all duration-200 ease-out",
           isActive ? "w-6" : "w-0 group-hover:w-6"
         )}
       />

@@ -12,12 +12,12 @@ const Menu: FC<TMenuProps> = ({ activeUrl, handleClick }) => {
     <ul className="mt-10 space-y-2 w-fit">
       <li onClick={() => handleClick("about")}>
         <MenuLink url="about" isActive={activeUrl === "about"}>
-          about me
+          about
         </MenuLink>
       </li>
       <li onClick={() => handleClick("experience")}>
         <MenuLink url="experience" isActive={activeUrl === "experience"}>
-          work experience
+          experience
         </MenuLink>
       </li>
       <li onClick={() => handleClick("projects")}>
