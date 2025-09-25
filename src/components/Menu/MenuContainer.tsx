@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
 import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 
 export type TUrlType = "about" | "experience" | "projects";
 
@@ -61,7 +62,12 @@ const MenuContainer = () => {
   const handleClick = (url: TUrlType) => {
     setActiveUrl(url);
   };
-  return <Menu activeUrl={activeUrl} handleClick={handleClick} />;
+  return (
+    <>
+      <Menu activeUrl={activeUrl} handleClick={handleClick} />
+      <MobileMenu activeUrl={activeUrl} />
+    </>
+  );
 };
 
 export default MenuContainer;

@@ -2,7 +2,10 @@ import ExperienceCard from "./ExperienceCard";
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="mb-20 pt-[10vh] scroll-mt-24">
+    <section
+      id="experience"
+      className="mb-10 md:mb-20 pt-[10vh] scroll-mt-10 md:scroll-mt-24"
+    >
       <ExperienceCard
         year="2024 — 2025"
         title="Company name title"

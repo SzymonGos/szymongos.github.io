@@ -1,6 +1,9 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="pt-[25vh] mb-20 text-zinc-400">
+    <section
+      id="about"
+      className="scroll-mt-48 pt-10 md:pt-[25vh] mb-10 md:mb-20 text-zinc-400"
+    >
       <p>
         I'm an engineer who believes the best solutions come from understanding
         the problem first, not the technology. I love taking complex challenges

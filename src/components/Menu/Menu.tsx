@@ -9,7 +9,7 @@ type TMenuProps = {
 
 const Menu: FC<TMenuProps> = ({ activeUrl, handleClick }) => {
   return (
-    <ul className="mt-10 space-y-2 w-fit">
+    <ul className="hidden md:block mt-10 space-y-2 w-fit">
       <li onClick={() => handleClick("about")}>
         <MenuLink url="about" isActive={activeUrl === "about"}>
           about

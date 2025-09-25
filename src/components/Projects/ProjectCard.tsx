@@ -22,11 +22,11 @@ const ProjectCard: FC<TProjectCardProps> = ({
   githubUrl,
 }) => {
   return (
-    <div className="flex flex-row gap-10">
-      <div className="mt-1 w-36 h-20 border-[0.5px] rounded-[2px]">
+    <div className="flex mb-16 flex-col md:flex-row gap-10">
+      <div className="mt-1 w-full sm:w-36 h-36 sm:h-20 border-[0.5px] rounded-[2px] order-2 md:order-1">
         <img src={image} alt={title} />
       </div>
-      <div className="basis-2/3">
+      <div className="basis-2/3 order-1 md:order-2">
         <div className="mb-5 space-y-2.5">
           <h3 className="mb-4">
             <LinkButton url={projectUrl} title={title} icon={<ArrowIcon />} />

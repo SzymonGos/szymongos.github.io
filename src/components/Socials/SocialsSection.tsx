@@ -4,7 +4,7 @@ import { LinkedInIcon } from "../Icons/LinkedInIcon";
 
 const SocialsSection = () => {
   return (
-    <div className="sticky bottom-20 flex gap-2">
+    <div className="mt-5 md:mt-0 md:sticky md:bottom-20 flex gap-2">
       <a
         href={GITHUB_URL}
         target="_blank"
