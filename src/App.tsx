@@ -1,7 +1,7 @@
 import AboutSection from "./components/AboutSection";
 import { Container } from "./components/Container";
 import ExperienceSection from "./components/Experience/ExperienceSection";
-import ProjectsSection from "./components/ProjectsSection";
+import ProjectsSection from "./components/Projects/ProjectsSection";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 import MenuContainer from "./components/Menu/MenuContainer";
 
