@@ -14,7 +14,9 @@ function App() {
         <div className="relative grid grid-cols-2 gap-5">
           <div className="sticky top-0 col-span-1 h-svh">
             <div className="flex h-full flex-col my-auto translate-y-1/4">
-              <h1 className="text-7xl font-bold">Szymon Gos</h1>
+              <h1 className="text-7xl font-bold">
+                <a href="/">Szymon Gos</a>
+              </h1>
               <h2 className="mt-5 text-lg">Frontend Engineer</h2>
               <MenuContainer />
             </div>
