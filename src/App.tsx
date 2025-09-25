@@ -4,6 +4,7 @@ import ExperienceSection from "./components/Experience/ExperienceSection";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 import MenuContainer from "./components/Menu/MenuContainer";
+import SocialsSection from "./components/Socials/SocialsSection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <h2 className="mt-5 text-lg">Frontend Engineer</h2>
               <MenuContainer />
             </div>
+            <SocialsSection />
           </div>
           <div className="col-span-1 col-start-2">
             <AboutSection />

@@ -19,7 +19,7 @@ const ExperienceCard: FC<TExperienceCardProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className="flex flex-row gap-24 text-base text-zinc-400">
+    <div className="flex mb-16 flex-row gap-24 text-base text-zinc-400">
       <div className="text-sm whitespace-nowrap">{year}</div>
       <div>
         <div className="mb-5">

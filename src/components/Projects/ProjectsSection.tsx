@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="h-svh pt-[10vh]">
+    <section id="projects" className="min-h-[50svh] pt-[10vh]">
       <ProjectCard
         title="Project Title"
         description="Project Description"

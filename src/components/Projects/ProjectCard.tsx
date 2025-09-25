@@ -28,7 +28,7 @@ const ProjectCard: FC<TProjectCardProps> = ({
       </div>
       <div className="basis-2/3">
         <div className="mb-5 space-y-2.5">
-          <h3>
+          <h3 className="mb-4">
             <LinkButton url={projectUrl} title={title} icon={<ArrowIcon />} />
           </h3>
           {githubUrl && (
@@ -40,7 +40,7 @@ const ProjectCard: FC<TProjectCardProps> = ({
             />
           )}
         </div>
-        <p className="mb-5">{description}</p>
+        <p className="mb-5 text-zinc-400">{description}</p>
         <div className="flex flex-wrap gap-2 mt-3">
           {label.map((item) => (
             <Label key={item} title={item} />
