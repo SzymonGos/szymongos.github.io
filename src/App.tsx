@@ -5,6 +5,7 @@ import ProjectsSection from "./components/Projects/ProjectsSection";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 import MenuContainer from "./components/Menu/MenuContainer";
 import SocialsSection from "./components/Socials/SocialsSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <AboutSection />
             <ExperienceSection />
             <ProjectsSection />
+            <Footer />
           </div>
         </div>
       </Container>
