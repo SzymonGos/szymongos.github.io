@@ -27,6 +27,12 @@ const ExperienceSection = () => {
         label={["Nextjs", "React", "TypeScript"]}
         projectUrl="#"
       />
+      {/* TODO: Add resume link */}
+      {/* <LinkButton
+        url="/szymon_gos.pdf"
+        title="View Resume"
+        icon={<ArrowIcon />}
+      /> */}
     </section>
   );
 };
