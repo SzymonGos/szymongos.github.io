@@ -1,6 +1,6 @@
 {
-  "name": "szymongos.github.io",
-  "homepage": "https://szymongos.github.io",
+  "name": "portfolio",
+  "homepage": "https://szymongos.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
