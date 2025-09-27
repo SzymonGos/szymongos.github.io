@@ -1,4 +1,6 @@
 import { MIUKI_URL, T2_WORLD_URL } from "../../constants";
+import { ArrowIcon } from "../Icons/ArrowIcon";
+import LinkButton from "../LinkButton";
 import ExperienceCard from "./ExperienceCard";
 
 const ExperienceSection = () => {
@@ -43,12 +45,12 @@ const ExperienceSection = () => {
         description="Frontend Developer Internship. Converting designs from Avocode to landing pages using Sass, collaborating with senior developers and following GitLab CI workflow."
         label={["Nextjs", "React", "TypeScript"]}
       />
-      {/* TODO: Add resume link */}
-      {/* <LinkButton
+
+      <LinkButton
         url="/szymon_gos.pdf"
         title="View Resume"
         icon={<ArrowIcon />}
-      /> */}
+      />
     </section>
   );
 };
