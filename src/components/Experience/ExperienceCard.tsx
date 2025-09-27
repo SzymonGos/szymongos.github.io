@@ -19,11 +19,16 @@ const ExperienceCard: FC<TExperienceCardProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className="flex mb-16 flex-col md:flex-row gap-5 md:gap-24 text-base text-zinc-400">
+    <div className="flex mb-16 flex-col md:flex-row gap-5 md:gap-16 text-base text-zinc-400">
       <div className="text-sm whitespace-nowrap">{year}</div>
       <div>
         <div className="mb-5">
-          <LinkButton url={projectUrl} title={title} icon={<ArrowIcon />} />
+          <LinkButton
+            url={projectUrl}
+            title={title}
+            icon={<ArrowIcon />}
+            disabled={!projectUrl}
+          />
         </div>
         <p className="mb-5">{description}</p>
         <div className="flex flex-wrap gap-2 mt-3">

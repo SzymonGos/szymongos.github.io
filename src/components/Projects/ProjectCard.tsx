@@ -22,8 +22,8 @@ const ProjectCard: FC<TProjectCardProps> = ({
   githubUrl,
 }) => {
   return (
-    <div className="flex mb-16 flex-col md:flex-row gap-10">
-      <div className="mt-1 w-full sm:w-36 h-36 sm:h-20 border-[0.5px] rounded-[2px] order-2 md:order-1">
+    <div className="flex mb-16 flex-col md:flex-row gap-10 md:gap-14">
+      <div className="mt-1 w-full sm:w-36 h-fit border-[0.5px] rounded-[4px] order-2 md:order-1 overflow-hidden">
         <img src={image} alt={title} />
       </div>
       <div className="basis-2/3 order-1 md:order-2">
