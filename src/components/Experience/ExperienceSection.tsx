@@ -43,7 +43,7 @@ const ExperienceSection = () => {
         year="Oct 2021 — Dec 2021"
         title="Nitro Digital Ltd"
         description="Frontend Developer Internship. Converting designs from Avocode to landing pages using Sass, collaborating with senior developers and following GitLab CI workflow."
-        label={["Nextjs", "React", "TypeScript"]}
+        label={["React", "TypeScript", "Sass"]}
       />
 
       <LinkButton
