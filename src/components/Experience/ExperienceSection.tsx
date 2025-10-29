@@ -47,7 +47,7 @@ const ExperienceSection = () => {
       />
 
       <LinkButton
-        url="/szymon_gos.pdf"
+        url="/szymon_gos_cv.pdf"
         title="View Resume"
         icon={<ArrowIcon />}
       />
