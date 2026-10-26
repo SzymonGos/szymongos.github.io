@@ -18,7 +18,7 @@ function App() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
                 <a href="/">Szymon Gos</a>
               </h1>
-              <h2 className="mt-5 text-lg">Frontend Engineer</h2>
+              <h2 className="mt-5 text-lg">Full-stack Developer</h2>
               <MenuContainer />
             </div>
             <SocialsSection />

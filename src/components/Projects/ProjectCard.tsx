@@ -4,13 +4,18 @@ import { LinkIcon } from "../Icons/LinkIcon";
 import Label from "../Label";
 import LinkButton from "../LinkButton";
 
+type TGithubUrls = {
+  label: string;
+  url: string;
+};
+
 type TProjectCardProps = {
   title: string;
   description: string;
   label: string[];
   image: string;
   projectUrl?: string;
-  githubUrl?: string;
+  githubUrls?: TGithubUrls[];
 };
 
 const ProjectCard: FC<TProjectCardProps> = ({
@@ -19,7 +24,7 @@ const ProjectCard: FC<TProjectCardProps> = ({
   label,
   image,
   projectUrl,
-  githubUrl,
+  githubUrls,
 }) => {
   return (
     <div className="flex mb-16 flex-col md:flex-row gap-10 md:gap-14">
@@ -31,14 +36,15 @@ const ProjectCard: FC<TProjectCardProps> = ({
           <h3 className="mb-4">
             <LinkButton url={projectUrl} title={title} icon={<ArrowIcon />} />
           </h3>
-          {githubUrl && (
-            <LinkButton
-              url={githubUrl}
-              title="github"
-              type="secondary"
-              icon={<LinkIcon />}
-            />
-          )}
+          {githubUrls &&
+            githubUrls?.map((link) => (
+              <LinkButton
+                url={link.url}
+                title={link.label}
+                type="secondary"
+                icon={<LinkIcon />}
+              />
+            ))}
         </div>
         <p className="mb-5 text-zinc-400">{description}</p>
         <div className="flex flex-wrap gap-2 mt-3">
